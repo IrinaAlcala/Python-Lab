@@ -2,20 +2,22 @@
 
 Exercise 1
 
-letter = input('A ').lower()
-if letter in 'a e i o u':
-   print(f'The letter {letter} is a vowel')
-else:
-   print(f'The letter {letter} is a consonant')
+
+   
+   letter = input('Please enter a letter from the alphabet (a-z or A-Z)')
+if letter in 'A a E e I i O o U u Y y' == True :
+    print(f'the letter {letter} is a vowel')
+else: 
+    print(f'the letter {letter} is a consonant')
 
 
 Exercise 2
 
-phrase = ''
+
+   phrase = ' '
 while phrase != 'quit':
-  phrase = input('Enter a phrase: ')
-  print(f'What you entered is {len(phrase)}
-  charaters long')
+    phrase = input('Please enter a word or phrase')
+    print(f'what you entered is {len(phrase)} characters long')
 
     Exercise 3
 
@@ -26,19 +28,22 @@ else:
    dog_years = 20 + (human_years - 2) * 7
 print(f"The dog's age in dog years is {dog_years}")
 
+
+
 Exercise 4
 
-print('Enter the lengths of three side of a triangle:')
-a = int(input('a: '))
-b = int(input('b: '))
-c = int(input('c: '))
 
-if a == b and b == c:
-  print(f'A triangle with sides of {a}; {b} & {c} is an equalateral triangle')
-elif a != b and a != c and b != c:
-  print(f'A triangle with sides of {a}; {b} & {c} is a scalene triangle')
+
+side_a = input('Enter the length of the first side of a triangle ')
+side_b = input('Enter the length of the second side of a triangle ')
+side_c = input('Enter the length of the third side of a triangle ')
+
+if side_a == side_b and side_b == side_c : 
+    print(f'A triangle with sides of {side_a}, {side_b} & {side_c} is an equalateral triangle')
+elif side_a != side_b and side_b != side_c : 
+    print(f'A triangle with sides of {side_a}, {side_b} & {side_c} is a scalene triangle')
 else:
-  print(f'A triangle with sides of {a}; {b} & {c} is a isosceles triangle')
+    print(f'A triangle with sides of {side_a}, {side_b} & {side_c} is a isosceles triangle')
 
 
 Exercise 5
