@@ -1,42 +1,12 @@
-# Branching & Looping Exercises
-
-color = input('Enter "green", "yellow", "red": ').lower()
-print(f'The user entered {color}')
-# Write the if...elif...else statement as described in the lesson
-
-if color == 'green':
-  print('Go')
-elif color == 'yellow':
-  print('slow_down')
-elif color == 'red':
-  print('stop')
-else:
-  print('bogus')
-
-
-while True:
-  color = input('Enter "green", "yellow", "red" or "quit": ' ).lower()
-  print(f'The user entered {color}')
-
-if color == 'quit':
-  break
-elif color == 'green':      
-  print('Go')
-elif color == 'yellow':
-  print('slow_down')
-elif color == 'red':
-  print('stop')
-else:
-  print('bogus')
 
 
 Exercise 1
 
-letter = input('Enter a letter (a-z): ').lower()
-if letter in 'a e u i o':
-  print(f'The letter {letter} is a vowel')
+letter = input('A ').lower()
+if letter in 'a e i o u':
+   print(f'The letter {letter} is a vowel')
 else:
-  print(f'The letter {letter} is a consonant')
+   print(f'The letter {letter} is a consonant')
 
 
 Exercise 2
@@ -49,13 +19,12 @@ while phrase != 'quit':
 
     Exercise 3
 
-human_years = int(input("Input a dog's age in human years:"))
+human_years = int(input("Input a dog's age in human years: "))
 if human_years < 3:
-  dog_years = human_years * 10
+   dog_years = human_years * 10
 else:
-  dog_years = 20 + (human_years - 2) * 7
+   dog_years = 20 + (human_years - 2) * 7
 print(f"The dog's age in dog years is {dog_years}")
-
 
 Exercise 4
 
